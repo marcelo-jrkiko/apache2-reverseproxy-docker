@@ -1,4 +1,4 @@
-# Clic Sistemas - DataCenter
+# Marcelo Junior Tech - 
 # ReverseProxy Server Image
 FROM httpd:latest
 
@@ -23,9 +23,7 @@ ENV APACHE_LOCK_DIR /var/lock/apache2
 RUN apt-get update 
 RUN apt-get install libapache2-mod-bw -y
 
-RUN a2enmod bw 
-
 # Porta
-EXPOSE 80
+EXPOSE 80 443
 
 CMD ["httpd", "-D", "FOREGROUND"]
