@@ -1,0 +1,1 @@
+docker container run -p 80:80 -p 443:443 -d --restart always --name RvProxy -v /storage/rvproxy:/storage -v /storage/rvproxy/logs:/var/log/apache2 clicsistemas/rvproxy

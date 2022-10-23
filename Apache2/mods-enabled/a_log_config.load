@@ -1,0 +1,2 @@
+# Depends: authn_core
+LoadModule log_config_module modules/mod_log_config.so
